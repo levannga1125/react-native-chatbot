@@ -153,7 +153,7 @@ export default class ControlHeader extends PureComponent {
                             {Helpers.ensureString(title)}
                         </ControlText>
                     </View>
-                    {/* {this._renderRight()} */}
+                    <View style={[Styles.justifyCenter, Styles.alignEnd, localStyles.right]}></View>
                 </View>
             </View>
         );
