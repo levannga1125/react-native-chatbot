@@ -6,10 +6,7 @@ import {
     StatusBar,
 } from "react-native";
 
-import {
-    TLanguage
-} from "../commons";
-import Strings from "./Strings";
+// import Strings from "./Strings";
 // import DeviceInfo from "react-native-device-info";
 
 // import Strings from "./Strings";
@@ -334,10 +331,10 @@ const Constants = {
     /**
      * Default setting information
      */
-    DefaultSettings: {
-        /** Default language */
-        LANGUAGE: Strings.getLanguage(),
-    },
+    // DefaultSettings: {
+    //     /** Default language */
+    //     LANGUAGE: Strings.getLanguage(),
+    // },
 
     /**
      * Event name using for DeviceEventEmitter
@@ -349,13 +346,6 @@ const Constants = {
         CHANGE_SETTINGS: "CHANGE_SETTINGS",
     },
 
-    /**
-     * Language
-     */
-    Language: {
-        // EN: "en" as TLanguage,
-        VI: "vi" as TLanguage,
-    },
     DateFormat: {
         DMY: "D/M/Y",
         DDMMYY: "DD/MM/YYYY",

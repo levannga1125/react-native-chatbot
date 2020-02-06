@@ -1,6 +1,4 @@
 import Helpers from "./Helpers";
-import LocalStorages from "./LocalStorages";
-import SessionStorages from "./SessionStorages";
 import Styles from "./Styles";
 
 export {
@@ -9,4 +7,3 @@ export {
     SessionStorages,
     Styles,
 };
-export * from "./Interface";

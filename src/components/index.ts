@@ -1,19 +1,10 @@
-import ControlAlert from "./ControlAlert";
-import ControlButton from "./ControlButton";
+import ControlChatBot from "./ControlChatBot";
+import ControlCircle from "./ControlCircle";
 import ControlImage from "./ControlImage";
-import ControlSpace from "./ControlSpace";
-import ControlText from "./ControlText";
-import ControlTextInput from "./ControlTextInput";
-import ControlList from "./ControlList";
-import ControlListItem from "./ControlListItem";
-
+import ControlText from "./ControlImage";
 export {
-    ControlAlert,
-    ControlButton,
+    ControlChatBot,
+    ControlCircle,
     ControlImage,
-    ControlSpace,
-    ControlText,
-    ControlTextInput,
-    ControlList,
-    ControlListItem,
+    ControlText
 };
