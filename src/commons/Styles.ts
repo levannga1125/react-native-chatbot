@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+import { Constants } from "../constants";
+
 /**
  * Styles.ts
  *
@@ -13,13 +15,43 @@ const Styles = StyleSheet.create({
     appContainer: {
         flex: 1,
     },
+    contentContainer: {
+        padding: Constants.Styles.CONTENT_SPACE, 
+        marginHorizontal: Constants.Styles.CONTENT_SPACE, 
+        backgroundColor: Constants.Styles.WHITE_COLOR, 
+        borderRadius: 10,
+    },
+    spacing: {
+        height: Constants.Styles.CONTENT_SPACE,
+    },
     /** Style center for any element inside it */
     center: {
         alignItems: "center",
         justifyContent: "center",
     },
-   
+    container: {
+        backgroundColor: Constants.Styles.BACKGROUND_COLOR,
+        // flex: 1,
+    },
+    blueContainer: {
+        backgroundColor: Constants.Styles.BLUE_COLOR,
+        flex: 1,
+    },
+    containerStatusBar: {
+        backgroundColor: Constants.Styles.BACKGROUND_COLOR,
+        flex: 1,
+        paddingTop: Constants.Styles.STATUS_BAR_HEIGHT,
+    },
+    content: {
+        paddingHorizontal: Constants.Styles.HORIZONTAL_SPACE_SIZE,
+        paddingVertical: Constants.Styles.VERTICAL_SPACE_SIZE,
+    },
     fullSize: { width: "100%", height: "100%" },
+    /** Please use one time inside the container or containerStatusBar class */
+    mainContent: {
+        marginHorizontal: Constants.Styles.HORIZONTAL_SPACE_SIZE,
+        marginVertical: Constants.Styles.VERTICAL_SPACE_SIZE,
+    },
 
     absolute: { position: "absolute" },
     absoluteStretch: {
@@ -41,9 +73,42 @@ const Styles = StyleSheet.create({
 
     transparentBackground: { backgroundColor: "transparent" },
 
+    debugBackground: {
+        backgroundColor: Constants.Styles.GRAY_COLOR
+    },
+    debugBorder: {
+        borderColor: Constants.Styles.RED_COLOR,
+        borderWidth: 1,
+    },
+    debugBorder2: {
+        borderColor: Constants.Styles.GREEN_COLOR,
+        borderWidth: 1,
+    },
+
     // =========================================================================
     // List
     // =========================================================================
+    listContent: {},
+    listEmpty: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: Constants.Styles.HORIZONTAL_SPACE_SIZE,
+        marginVertical: Constants.Styles.VERTICAL_SPACE_SIZE,
+    },
+    listFooter: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: Constants.Styles.HORIZONTAL_SPACE_SIZE,
+        marginVertical: Constants.Styles.VERTICAL_SPACE_SIZE,
+    },
+    listItem: {
+        paddingHorizontal: Constants.Styles.HORIZONTAL_SPACE_SIZE,
+        paddingVertical: Constants.Styles.VERTICAL_SPACE_SIZE / 2,
+    },
+    listSeperator: {
+        height: 1,
+        backgroundColor: Constants.Styles.BORDER_COLOR,
+    },
 
     // =========================================================================
     // Layout
@@ -70,6 +135,13 @@ const Styles = StyleSheet.create({
     },
 
     // =========================================================================
+    // Controls style
+    // =========================================================================
+    controlFirst: { marginBottom: Constants.Styles.VERTICAL_SPACE_SIZE / 2 },
+    controlLast: { marginTop: Constants.Styles.VERTICAL_SPACE_SIZE / 2 },
+    controlMiddle: { marginVertical: Constants.Styles.VERTICAL_SPACE_SIZE / 2 },
+
+    // =========================================================================
     // Align & Valign
     // =========================================================================
     alignCenter: { alignItems: "center" },
@@ -79,6 +151,29 @@ const Styles = StyleSheet.create({
     justifyEnd: { justifyContent: "flex-end" },
     justifySpace: { justifyContent: "space-between" },
     justifyStart: { justifyContent: "flex-start" },
+
+    // =========================================================================
+    // Text
+    // =========================================================================
+    text: {
+        color: Constants.Styles.TEXT_DEFAULT_COLOR,
+        fontFamily: Constants.Styles.FONT_REGULAR,
+        fontSize: Constants.Styles.FONT_SIZE_SMALL,
+    },
+    textBold: { fontFamily: Constants.Styles.FONT_BOLD},
+    textBoldItalic: { fontFamily: Constants.Styles.FONT_BOLD_ITALIC },
+    textItalic: { fontFamily: Constants.Styles.FONT_ITALIC },
+    textRegular: { fontFamily: Constants.Styles.FONT_REGULAR},
+    textSub: {
+        // color: Constants.Styles.TEXT_SUB_COLOR,
+        fontFamily: Constants.Styles.FONT_REGULAR,
+        fontSize: Constants.Styles.FONT_SIZE_SMALL,
+        opacity: 0.3,
+    },
+    textSubColor: { opacity: 0.3 },
+
+    textLarge: { fontSize: Constants.Styles.FONT_SIZE_LARGE },
+    textSmall: { fontSize: Constants.Styles.FONT_SIZE_SMALL },
 
     textCenter: { textAlign: "center" },
     textJustify: { textAlign: "justify" },
@@ -375,6 +470,49 @@ const Styles = StyleSheet.create({
     // =========================================================================
     // Common Page, Body, Form Containner
     // =========================================================================
+    body: {
+        marginHorizontal: Constants.Styles.CONTENT_SPACE,
+        marginTop: 10,
+        flex: 1,
+    },
+    form: {
+        padding: Constants.Styles.CONTENT_SPACE, 
+        backgroundColor: Constants.Styles.WHITE_COLOR, 
+        borderRadius: 10
+    },
+    // =========================================================================
+    // Common Text Style for App
+    // =========================================================================
+    textDefaultSmall: {
+        fontFamily: Constants.Styles.FONT_REGULAR,
+        fontSize: Constants.Styles.FONT_SIZE_SMALL,
+        color: Constants.Styles.TEXT_SUB_TITLE_COLOR,
+    },
+    textDefault: {
+        fontFamily: Constants.Styles.FONT_REGULAR,
+        fontSize: Constants.Styles.FONT_SIZE_DEFAULT,
+        color: Constants.Styles.PRIMARY_COLOR,
+    },
+    textBoldDefault: {
+        fontFamily: Constants.Styles.FONT_BOLD,
+        fontSize: Constants.Styles.FONT_SIZE_DEFAULT,
+        color: Constants.Styles.PRIMARY_COLOR,
+    },
+    textItemTitle: {
+        fontFamily: Constants.Styles.FONT_REGULAR,
+        fontSize: Constants.Styles.FONT_SIZE_DEFAULT,
+        color: Constants.Styles.ITEM_TITLE_COLOR,
+    },
+    textItemValue: {
+        fontFamily: Constants.Styles.FONT_BOLD,
+        fontSize: Constants.Styles.FONT_SIZE_DEFAULT,
+        color: Constants.Styles.ITEM_VALUE_COLOR,
+    },
+    textInput: {
+        fontFamily: Constants.Styles.FONT_BOLD,
+        fontSize: Constants.Styles.FONT_SIZE_MEDIUM,
+        color: Constants.Styles.PRIMARY_COLOR,
+    },
 
     // =========================================================================
     // Common Button

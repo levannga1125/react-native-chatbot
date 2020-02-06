@@ -12,6 +12,7 @@ import ControlHeader from "./ControlHeader";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import ControlCircle from "./ControlCircle";
 import { ControlText } from ".";
+import { Constants } from "../constants";
 
 export interface IProps extends ViewProps {
     title?: string;
