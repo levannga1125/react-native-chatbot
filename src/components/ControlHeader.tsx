@@ -14,7 +14,7 @@ import {
     Helpers,
     Styles,
 } from "../commons";
-import { Constants, Resources } from "../constants";
+import { Constants } from "../constants";
 
 import ControlText from "./ControlText";
 import ControlImage from "./ControlImage";
@@ -141,7 +141,7 @@ export default class ControlHeader extends PureComponent {
                             onPress={this.onBackPress}
                             style={[Styles.space, Styles.justifyCenter, localStyles.buttonIcon]}>
                             <ControlImage
-                                source={Resources.Images.BACK}
+                                source={require("../assets/images/Back.png")}
                                 style={localStyles.buttonSize}
                             />
                         </TouchableOpacity>

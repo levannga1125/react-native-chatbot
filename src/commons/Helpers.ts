@@ -1,6 +1,4 @@
 import { Platform } from "react-native";
-import { Strings, Constants, Screens } from "../constants";
-import { LocalStorages } from ".";
 
 /**
  * Helpers.ts
@@ -149,13 +147,6 @@ const Helpers = {
         const cloneObj: T = {} as T;
         Helpers.copyProperties(sourceObj, cloneObj);
         return cloneObj;
-    },
-
-    formatCurrency: (money: string | number): string => {
-        if (Strings.getLanguage() === Constants.Language.VI) {
-            return (money + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
-        }
-        return (money + "").replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
     },
 
     formatTime: (date?: Date | number): string => {
