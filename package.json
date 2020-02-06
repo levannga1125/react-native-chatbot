@@ -1,55 +1,23 @@
 {
-  "_from": "git+https://github.com/levannga1125/react-native-chatbot.git",
-  "_id": "react-native-chatbot@1.0.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/react-native-chatbot",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "https://github.com/levannga1125/react-native-chatbot.git",
-    "rawSpec": "https://github.com/levannga1125/react-native-chatbot.git",
-    "saveSpec": "git+https://github.com/levannga1125/react-native-chatbot.git",
-    "fetchSpec": "https://github.com/levannga1125/react-native-chatbot.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/levannga1125/react-native-chatbot.git#68157cb6886611885f3c262eeb7a87fde789b2bd",
-  "_spec": "https://github.com/levannga1125/react-native-chatbot.git",
-  "_where": "D:\\Part time\\maycorp\\dev\\scb-mobile",
-  "author": {
-    "name": "Kin"
-  },
-  "bugs": {
-    "url": "https://github.com/levannga1125/react-native-chatbot/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "react-native-chatbot",
+  "version": "1.0.0",
   "description": "",
-  "devDependencies": {
-    "metro-react-native-babel-preset": "0.58.0"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/levannga1125/react-native-chatbot#readme",
+  "repository": "https://github.com/levannga1125/react-native-chatbot.git",
   "keywords": [
     "react-native-chatbot"
   ],
+  "author": "Kin",
   "license": "MIT",
-  "main": "index.js",
-  "name": "react-native-chatbot",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "0.58.0"
+  },
   "peerDependencies": {
     "react-native-keyboard-aware-scroll-view": "0.9.1",
     "axios": "0.19.0",
     "react-native-fast-image": "7.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/levannga1125/react-native-chatbot.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.0.0"
+  }
 }
