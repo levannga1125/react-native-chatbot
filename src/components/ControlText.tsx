@@ -6,7 +6,6 @@ import {
 } from "react-native";
 
 import { Styles } from "../commons";
-import { Constants } from "../constants";
 
 export interface IProps extends TextProps {
     fontStyle?: string;
@@ -64,16 +63,16 @@ export default class ControlText extends PureComponent<IProps> {
         }
         switch (textColor) {
             case ControlText.TextColor.GRAY:
-                textColorStyle.color = Constants.Styles.TEXT_GRAY_COLOR;
+                textColorStyle.color = "#999999";
                 break;
             case ControlText.TextColor.WHITE:
-                textColorStyle.color = Constants.Styles.WHITE_COLOR;
+                textColorStyle.color = "#FFFFFF";
                 break;
             case ControlText.TextColor.YELLOW:
-                textColorStyle.color = Constants.Styles.YELLOW_COLOR;
+                textColorStyle.color = "#D8A962";
                 break;
             default:
-                textColorStyle.color = Constants.Styles.TEXT_DEFAULT_COLOR;
+                textColorStyle.color = "#082149";
                 break;
         }
 
@@ -98,7 +97,7 @@ export default class ControlText extends PureComponent<IProps> {
                 // Specifies whether fonts should scale to respect
                 // Text Size accessibility settings. The default is true
                 // allowFontScaling={false}
-                style={StyleSheet.flatten([{fontSize: fontSize ? fontSize : Constants.Styles.FONT_SIZE_DEFAULT}, textStyle, textColorStyle, textMargin, style])}>
+                style={StyleSheet.flatten([{fontSize: fontSize ? fontSize : 14}, textStyle, textColorStyle, textMargin, style])}>
                 {children}
             </Text>
         );
