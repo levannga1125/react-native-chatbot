@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 import { Constants } from "../constants";
-import Helpers from "./Helpers";
 
 /**
  * Styles.ts
