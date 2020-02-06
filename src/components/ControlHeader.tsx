@@ -15,8 +15,6 @@ import {
 } from "../commons";
 
 import ControlText from "./ControlText";
-import ControlImage from "./ControlImage";
-// import { ControlSvg } from ".";
 
 /**
  * ControlHeader.tsx
